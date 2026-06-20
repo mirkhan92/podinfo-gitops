@@ -6,6 +6,9 @@ host: #0.0.0.0
 backend: #http://backend-podinfo:9898/echo
 backends: []
 
+autoscaling:
+  enabled: true
+
 image:
   repository: ghcr.io/stefanprodan/podinfo
   tag: 6.14.0
@@ -306,4 +309,5 @@ probes:
     failureThreshold: 20
     successThreshold: 1
     periodSeconds: 10
+
 
