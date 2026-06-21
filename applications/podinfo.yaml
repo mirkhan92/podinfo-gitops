@@ -10,11 +10,11 @@ spec:
   source:
     repoURL: https://github.com/mirkhan92/podinfo-gitops.git
     targetRevision: HEAD
-    path: helm
+    path: podinfo
 
-    helm:
-      valueFiles:
-        - values.yaml
+      #    helm:
+      #valueFiles:
+      # - values.yaml
 
   destination:
     server: https://kubernetes.default.svc
